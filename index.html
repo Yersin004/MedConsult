@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedConsult - Online Doctor Consultations</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="MedConsult Logo">
+            <span>MedConsult</span>
+        </div>
+        <nav>
+            <a href="index.html" data-lang-key="home">Главная</a>
+            <a href="doctors.html" data-lang-key="doctors">Врачи</a>
+            <a href="about.html" data-lang-key="aboutUs">О нас</a>
+            <div id="indicator"></div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 data-lang-key="mainTitle">Online consultation with a practicing doctor</h1>
+                    <p data-lang-key="mainDescription">An experienced doctor will conduct an examination via video link, ask questions and make a conclusion</p>
+                    <div class="price-info">
+                        <span data-lang-key="pricePrefix">from</span>
+                        <span class="price">990</span>
+                        <span data-lang-key="currency">tg</span>
+                        <span data-lang-key="perConsultation">per consultation</span>
+                    </div>
+                    <div class="cta-buttons">
+                        <button class="cta-button primary" data-lang-key="viewDoctors">View all doctors</button>
+                        <button class="cta-button secondary" data-lang-key="askDoctor">Ask doctor a question / 1390 tg</button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="img/doc.jpg" alt="Online Doctor Consultation">
+                </div>
+            </div>
+        </section>
+
+        <section class="doctors-categories">
+            <div class="category-grid">
+                <div class="category-card">
+                    <h3>
+                        <span class="category-title" data-lang-key="pediatrician">Педиатр</span>
+                        <span class="doctor-count" data-lang-key="doctorCount83">- 83 врача</span>
+                    </h3>
+                    <p class="consultation-cost">
+                        <span data-lang-key="consultationCost">Стоимость консультации:</span>
+                        <span class="price-range">2300 тг - 123456789 тг</span>
+                    </p>
+                </div>
+
+                <div class="category-card">
+                    <h3>
+                        <span class="category-title" data-lang-key="gynecologist">Акушер-гинеколог</span>
+                        <span class="doctor-count" data-lang-key="doctorCount106">- 106 врачей</span>
+                    </h3>
+                    <p class="consultation-cost">
+                        <span data-lang-key="consultationCost">Стоимость консультации:</span>
+                        <span class="price-range">2000 тг - 15000 тг</span>
+                    </p>
+                </div>
+
+                <div class="category-card">
+                    <h3>
+                        <span class="category-title" data-lang-key="endocrinologist">Эндокринолог</span>
+                        <span class="doctor-count" data-lang-key="doctorCount57">- 57 врачей</span>
+                    </h3>
+                    <p class="consultation-cost">
+                        <span data-lang-key="consultationCost">Стоимость консультации:</span>
+                        <span class="price-range">3000 тг - 13000 тг</span>
+                    </p>
+                </div>
+
+                <div class="category-card">
+                    <h3>
+                        <span class="category-title" data-lang-key="therapist">Терапевт</span>
+                        <span class="doctor-count" data-lang-key="doctorCount116">- 116 врачей</span>
+                    </h3>
+                    <p class="consultation-cost">
+                        <span data-lang-key="consultationCost">Стоимость консультации:</span>
+                        <span class="price-range">2000 тг - 15000 тг</span>
+                    </p>
+                </div>
+
+                <div class="category-card">
+                    <h3>
+                        <span class="category-title" data-lang-key="dermatologist">Дерматолог</span>
+                        <span class="doctor-count" data-lang-key="doctorCount13">- 13 врачей</span>
+                    </h3>
+                    <p class="consultation-cost">
+                        <span data-lang-key="consultationCost">Стоимость консультации:</span>
+                        <span class="price-range">5000 тг - 10000 тг</span>
+                    </p>
+                </div>
+
+                <div class="category-card purple">
+                    <h3 data-lang-key="moreDoctors">Более 800 врачей</h3>
+                    <p data-lang-key="withRealReviews">с реальными отзывами</p>
+                    <button class="view-all" data-lang-key="viewAll">Смотреть всех</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="how-it-works">
+            <h2 data-lang-key="howItWorks">Как это работает?</h2>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-icon">
+                        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="32" cy="32" r="30" stroke="#2D5A7D" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M32 20C28.13 20 25 23.13 25 27C25 30.87 28.13 34 32 34C35.87 34 39 30.87 39 27C39 23.13 35.87 20 32 20ZM32 32C29.24 32 27 29.76 27 27C27 24.24 29.24 22 32 22C34.76 22 37 24.24 37 27C37 29.76 34.76 32 32 32Z" fill="#2D5A7D"/>
+                            <path d="M32 36C26.67 36 22 40.67 22 46V47H42V46C42 40.67 37.33 36 32 36ZM24 45C24.01 41.69 27.69 38 32 38C36.31 38 39.99 41.69 40 45H24Z" fill="#2D5A7D"/>
+                        </svg>
+                    </div>
+                    <h3 data-lang-key="chooseDoctor">Выберите врача</h3>
+                    <p data-lang-key="chooseDoctorDesc">Укажите удобное время и дату для онлайн консультации</p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-icon">
+                        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="12" y="16" width="40" height="32" rx="4" stroke="#2D5A7D" stroke-width="2"/>
+                            <rect x="12" y="24" width="40" height="8" fill="#2D5A7D" fill-opacity="0.1"/>
+                            <circle cx="32" cy="40" r="4" fill="#2D5A7D"/>
+                            <path d="M20 20H44" stroke="#2D5A7D" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 data-lang-key="makePayment">Произведите оплату</h3>
+                    <p data-lang-key="makePaymentDesc">Картой на сайте или в приложении Kaspi.kz</p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-icon">
+                        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="14" y="12" width="36" height="40" rx="4" stroke="#2D5A7D" stroke-width="2"/>
+                            <rect x="20" y="28" width="24" height="16" rx="2" fill="#2D5A7D" fill-opacity="0.1"/>
+                            <circle cx="32" cy="20" r="4" fill="#2D5A7D"/>
+                            <path d="M26 36L30 40L38 32" stroke="#2D5A7D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Пройдите консультацию</h3>
+                    <p>Через видео/аудио звонок или чат в личном кабинете</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="advantages">
+            <h2>Преимущества онлайн консультации</h2>
+            <div class="advantages-grid">
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M32 8H8C6.9 8 6 8.9 6 10V30C6 31.1 6.9 32 8 32H32C33.1 32 34 31.1 34 30V10C34 8.9 33.1 8 32 8ZM32 30H8V10H32V30Z" fill="#8B5CF6"/>
+                            <path d="M16 23H24V25H16V23ZM16 18H28V20H16V18ZM16 13H28V15H16V13Z" fill="#8B5CF6"/>
+                        </svg>
+                    </div>
+                    <p>В нашем сервисе только практикующие врачи с подтвержденной квалификацией</p>
+                </div>
+
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 4C11.2 4 4 11.2 4 20C4 28.8 11.2 36 20 36C28.8 36 36 28.8 36 20C36 11.2 28.8 4 20 4ZM20 34C12.3 34 6 27.7 6 20C6 12.3 12.3 6 20 6C27.7 6 34 12.3 34 20C34 27.7 27.7 34 20 34Z" fill="#8B5CF6"/>
+                            <path d="M21 11H19V21L27.2 26.2L28.2 24.6L21 20.2V11Z" fill="#8B5CF6"/>
+                        </svg>
+                    </div>
+                    <p>Общайтесь с врачами в любое время из любой точки мира</p>
+                </div>
+
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M32 8H8C6.9 8 6 8.9 6 10V30C6 31.1 6.9 32 8 32H32C33.1 32 34 31.1 34 30V10C34 8.9 33.1 8 32 8ZM32 30H8V10H32V30Z" fill="#8B5CF6"/>
+                            <path d="M16 25H24V27H16V25ZM16 20H28V22H16V20ZM16 15H28V17H16V15Z" fill="#8B5CF6"/>
+                        </svg>
+                    </div>
+                    <p>Стоимость онлайн консультации в 3-6 раз дешевле очного приема</p>
+                </div>
+
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M28 8H12C10.9 8 10 8.9 10 10V30C10 31.1 10.9 32 12 32H28C29.1 32 30 31.1 30 30V10C30 8.9 29.1 8 28 8ZM28 30H12V10H28V30Z" fill="#8B5CF6"/>
+                            <path d="M20 28C21.1046 28 22 27.1046 22 26C22 24.8954 21.1046 24 20 24C18.8954 24 18 24.8954 18 26C18 27.1046 18.8954 28 20 28Z" fill="#8B5CF6"/>
+                        </svg>
+                    </div>
+                    <p>Для консультации, вам нужен только смартфон или компьютер с подключением к интернету</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="reviews">
+            <h2 data-lang-key="reviews">Отзывы</h2>
+            <div class="reviews-slider">
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <h3>Фархат</h3>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                        <p>Она,очень грамотный специалист! Все объяснила тщательно и профессионально! Рекомендую всем обратиться к ней!</p>
+                    </div>
+                    <div class="doctor-info">
+                        <div class="doctor-details">
+                            <h4>Гульмира Шеркешбаева</h4>
+                            <p>Дерматовенеролог</p>
+                            <span class="review-date">12.11.2024</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <h3>Анна</h3>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                        <p>Добрый вечер, хочу сказать огромное спасибо доктору Евгение Николаевне, ответила очень подробно на мой вопрос, доступно, разъяснила всё. Сразу видно врч любит свою работу и заботится о здоровье своих пациентов. Всем советую обращаться к данному специалисту, она super!...</p>
+                    </div>
+                    <div class="doctor-info">
+                        <div class="doctor-details">
+                            <h4>Евгения Благонравова</h4>
+                            <p>Акушер-гинеколог</p>
+                            <span class="review-date">20.10.2024</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <h3>Наталья</h3>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                        <p>Очень внимательный врач ,все внимательно выслушала, ответила на все интересующие вoпросы о моей беременности дала нужные рекомендации очень благодарна!</p>
+                    </div>
+                    <div class="doctor-info">
+                        <div class="doctor-details">
+                            <h4>Кристина Степанова</h4>
+                            <p>Акушер-гинеколог</p>
+                            <span class="review-date">10.10.2024</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 data-lang-key="connectWithUs">Connect With Us</h3>
+                <div class="social-links">
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3 data-lang-key="quickLinks">Quick Links</h3>
+                <ul>
+                    <li><a href="/about" data-lang-key="aboutUs">About Us</a></li>
+                    <li><a href="/services" data-lang-key="services">Services</a></li>
+                    <li><a href="/contact" data-lang-key="contact">Contact</a></li>
+                    <li><a href="/privacy" data-lang-key="privacyPolicy">Privacy Policy</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3 data-lang-key="contactInfo">Contact Info</h3>
+                <p>
+                    <i class="fas fa-phone"></i> +7 707 777 77 77
+                </p>
+                <p>
+                    <i class="fas fa-envelope"></i> info@medconsult.kz
+                </p>
+                <p>
+                    <i class="fas fa-map-marker-alt"></i> <span data-lang-key="address">Almaty, Kazakhstan</span>
+                </p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p><span data-lang-key="copyright">&copy; <span id="currentYear"></span> MedConsult. All rights reserved.</span></p>
+        </div>
+    </footer>
+</body>
+<script src="js/translations.js"></script>
+</html> 

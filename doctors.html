@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Врачи - MedConsult</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/doctors.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="MedConsult Logo">
+            <span>MedConsult</span>
+        </div>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="doctors.html" class="active">Врачи</a>
+            <a href="about.html">О нас</a>
+            <div id="indicator"></div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="doctors-search">
+            <div class="search-container">
+                <div class="search-box">
+                    <input type="text" placeholder="Поиск врача по имени или специальности">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="filter-tags">
+                    <span class="filter-tag active">Все врачи</span>
+                    <span class="filter-tag">Педиатры</span>
+                    <span class="filter-tag">Гинекологи</span>
+                    <span class="filter-tag">Эндокринологи</span>
+                    <span class="filter-tag">Терапевты</span>
+                    <span class="filter-tag">Дерматологи</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="doctors-content">
+            <div class="container">
+                <aside class="filters-sidebar">
+                    <div class="filter-group">
+                        <h3>Стаж работы</h3>
+                        <label class="checkbox-container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            До 5 лет
+                        </label>
+                        <label class="checkbox-container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            5-10 лет
+                        </label>
+                        <label class="checkbox-container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            Более 10 лет
+                        </label>
+                    </div>
+
+                    <div class="filter-group">
+                        <h3>Стоимость консультации</h3>
+                        <div class="price-range">
+                            <input type="range" min="2000" max="15000" step="1000" value="2000">
+                            <div class="price-inputs">
+                                <input type="number" value="2000" min="2000" max="15000"> тг -
+                                <input type="number" value="15000" min="2000" max="15000"> тг
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <h3>Рейтинг</h3>
+                        <label class="checkbox-container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            <span class="stars">★★★★★</span>
+                        </label>
+                        <label class="checkbox-container">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            <span class="stars">★★★★☆</span>
+                        </label>
+                    </div>
+                </aside>
+
+                <div class="doctors-list">
+                    <!-- Doctor Card Template -->
+                    <div class="doctor-card">
+                        <div class="doctor-header">
+                            <div class="doctor-photo">
+                                <img src="img/doctor1.jpg" alt="Алия Сатпаева">
+                                <div class="online-status">Онлайн</div>
+                            </div>
+                            <div class="doctor-brief">
+                                <h3>Алия Сатпаева</h3>
+                                <p class="specialty">Педиатр</p>
+                                <div class="rating">
+                                    <span class="stars">★★★★★</span>
+                                    <span class="review-count">127 отзывов</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="doctor-details">
+                            <div class="experience-price">
+                                <span class="experience"><i class="fas fa-user-md"></i> Стаж 15 лет</span>
+                                <span class="price"><i class="fas fa-tag"></i> От 5000 тг</span>
+                            </div>
+                            <div class="specializations">
+                                <span class="tag">Детские болезни</span>
+                                <span class="tag">Вакцинация</span>
+                                <span class="tag">Неонатология</span>
+                            </div>
+                            <div class="next-slot">
+                                <p>Ближайшее время приема:</p>
+                                <div class="time-slots">
+                                    <span class="time-slot">Сегодня 15:30</span>
+                                    <span class="time-slot">Завтра 10:00</span>
+                                </div>
+                            </div>
+                            <div class="card-actions">
+                                <button class="btn-consult">Консультация</button>
+                                <button class="btn-profile">Профиль врача</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Doctor 2 -->
+                    <div class="doctor-card">
+                        <div class="doctor-header">
+                            <div class="doctor-photo">
+                                <img src="img/doctor2.jpg" alt="Евгения Благонравова">
+                                <div class="online-status">Онлайн</div>
+                            </div>
+                            <div class="doctor-brief">
+                                <h3>Евгения Благонравова</h3>
+                                <p class="specialty">Акушер-гинеколог</p>
+                                <div class="rating">
+                                    <span class="stars">★★★★★</span>
+                                    <span class="review-count">98 отзывов</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="doctor-details">
+                            <div class="experience-price">
+                                <span class="experience"><i class="fas fa-user-md"></i> Стаж 12 лет</span>
+                                <span class="price"><i class="fas fa-tag"></i> От 6000 тг</span>
+                            </div>
+                            <div class="specializations">
+                                <span class="tag">Беременность</span>
+                                <span class="tag">УЗИ</span>
+                                <span class="tag">Гинекология</span>
+                            </div>
+                            <div class="next-slot">
+                                <p>Ближайшее время приема:</p>
+                                <div class="time-slots">
+                                    <span class="time-slot">Сегодня 16:00</span>
+                                    <span class="time-slot">Завтра 11:30</span>
+                                </div>
+                            </div>
+                            <div class="card-actions">
+                                <button class="btn-consult">Консультация</button>
+                                <button class="btn-profile">Профиль врача</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <!-- Same footer as in other pages -->
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Связаться с нами</h3>
+                <div class="social-links">
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Быстрые ссылки</h3>
+                <ul>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="#">Услуги</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Политика конфиденциальности</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Контактная информация</h3>
+                <p>
+                    <i class="fas fa-phone"></i> +7 707 777 77 77
+                </p>
+                <p>
+                    <i class="fas fa-envelope"></i> info@medconsult.kz
+                </p>
+                <p>
+                    <i class="fas fa-map-marker-alt"></i> Алматы, Казахстан
+                </p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; <span id="currentYear"></span> MedConsult. Все права защищены.</p>
+        </div>
+    </footer>
+</body>
+<script src="js/translations.js"></script>
+<script src="js/doctors.js"></script>
+</html> 
